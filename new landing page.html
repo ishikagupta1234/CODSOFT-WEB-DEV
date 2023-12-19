@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Luxe Voyage</title>
+</head>
+<style>
+    body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        header {
+            background-image: url('https://wallpapercave.com/wp/wp7159310.jpg');
+            background-size: cover;
+            background-position: center;
+            color: #fff;
+            padding: 50px 0;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+
+        header p {
+            font-size: 1.2em;
+        }
+
+        nav {
+            background-color: #333;
+            padding: 15px 0;
+            position: absolute;
+            width: 100%;
+            z-index: 1000;
+            text-align: center;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+            font-size: 1.2em;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #ff6600;
+        }
+
+
+        .hero {
+            background-image: url('https://wallpaperaccess.com/full/1431622.jpg');
+            background-size: cover;
+            background-position: center;
+            color: #fff;
+            text-align: center;
+            padding: 80px 0;
+        }
+
+        .features {
+            background-color: #fff;
+            padding: 80px 0;
+            text-align: center;
+        }
+
+        .feature {
+            margin-bottom: 40px;
+        }
+
+        .feature h3 {
+            font-size: 1.5em;
+            color: #333;
+        }
+
+        .feature p {
+            font-size: 1.1em;
+            color: #666;
+        }
+
+        .cta {
+            background-image: url('https://images7.alphacoders.com/457/457015.jpg');
+            background-size: cover;
+            background-position: center;
+            color: #fff;
+            text-align: center;
+            padding: 80px 0;
+        }
+
+        .cta h2 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+
+        .cta p {
+            font-size: 1.2em;
+            margin-bottom: 30px;
+        }
+
+        .testimonials {
+            background-color: #f9f9f9;
+            padding: 80px 0;
+        }
+
+        .testimonial {
+            background-color: #fff;
+            padding: 30px;
+            margin-bottom: 30px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: left;
+        }
+
+        .testimonial p {
+            font-size: 1.2em;
+            color: #555;
+        }
+
+        .testimonial .author {
+            font-size: 1.1em;
+            color: #888;
+            margin-top: 15px;
+        }
+
+        .pricing {
+            background-image: url('http://hdwpro.com/wp-content/uploads/2017/01/HD-London-Wallpaper.jpg');
+            background-size: cover;
+            background-position: center;
+            color: #fff;
+            text-align: center;
+            padding: 80px 0;
+        }
+
+        .price-plan {
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 40px;
+            margin-bottom: 40px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+            border-radius: 10px;
+        }
+
+        .price-plan h3 {
+            font-size: 2em;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        .price-plan p {
+            font-size: 1.1em;
+            color: #666;
+            margin-bottom: 30px;
+        }
+
+        .price-plan .price {
+            font-size: 1.5em;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        .contact {
+            background-image: url('http://1.bp.blogspot.com/-xTgD9hQ3wOY/VBuAEUbduHI/AAAAAAAAPFk/kBVv_dj7Mv0/s1600/gezi-seyahat-travel-wallpaper-3.jpg');
+            background-size: cover;
+            background-position: center;
+            padding: 80px 0;
+            color: #fff;
+            text-align: center;
+        }
+
+        form {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 30px;
+            border-radius: 10px;
+        }
+
+        form label,
+        form input,
+        form textarea,
+        form button {
+            display: block;
+            margin-bottom: 20px;
+            width: 100%;
+        }
+
+        form input,
+        form textarea {
+            padding: 10px;
+            font-size: 1em;
+        }
+
+        form button {
+            background-color: #fff;
+            color: #333;
+            padding: 10px;
+            font-size: 1.2em;
+            cursor: pointer;
+            border: none;
+            border-radius: 5px;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+</style>
+
+<body>
+
+    <header id="home">
+        <div class="container">
+            <h1>Luxe Voyage</h1>
+            <p>Discover . Wander . Indulge</p>
+        </div>
+    </header>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#facilities">Facilities</a>
+        <a href="#reviews">Reviews</a>
+        <a href="#plans">Plans</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <section class="hero">
+        <div class="container">
+            <h2>Crafting Dreams, One Destination at a Time</h2>
+            <p>Journey in Style, Travel with Luxe Voyage. Join thousands of satisfied voyagers today!</p>
+            <a href="#" class="btn">Learn More</a>
+        </div>
+    </section>
+
+    <section class="features" id="facilities">
+        <div class="container">
+            <h2>FACILITIES</h2>
+            <div class="feature">
+                <h3>Customized Itineraries</h3>
+                <p>Tailor-made travel plans to suit individual preferences and needs.</p>
+            </div>
+            <div class="feature">
+                <h3>Seamless Booking</h3>
+                <p>Easy and efficient booking processes for flights, accommodations, and activities.</p>
+            </div>
+            <div class="feature">
+                <h3>Exclusive Deals</h3>
+                <p>Access to special discounts, promotions, and packages for clients.</p>
+            </div>
+            <div class="feature">
+                <h3>Visa Assistance</h3>
+                <p>Support in obtaining visas and necessary travel documentation.</p>
+            </div>
+            <div class="feature">
+                <h3>Travel Resources</h3>
+                <p>Providing information on travel essentials, packing tips, and cultural etiquette.</p>
+            </div>
+            <div class="feature">
+                <h3>24/7 Support</h3>
+                <p>Round-the-clock assistance for travelers in case of emergencies or changes.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta">
+        <div class="container">
+            <h2>Get Started Today!</h2>
+            <p>Join our Voyage and experience the benefits.</p>
+            <a href="#" class="btn">Book Your Trip</a>
+        </div>
+    </section>
+
+    <section class="testimonials" id="reviews">
+        <div class="container">
+            <h2>What Our Voyagers Say</h2>
+            <div class="testimonial">
+                <p> "Exceptional service from start to finish. Our customized itinerary exceeded expectations, and the attention to detail made our trip truly unforgettable."</p>
+                <p class="author">- Akash Sharma</p>
+            </div>
+            <div class="testimonial">
+                <p>"24/7 support came in handy during a travel hiccup, and the agency handled it swiftly and efficiently. Their dedication to customer service is commendable."</p>
+                <p class="author">- Pooja Mishra</p>
+            </div>
+            <div class="testimonial">
+                <p>"Securing exclusive deals through this agency saved us money without compromising on the quality of our travel experience. Highly recommend for budget-conscious travelers."</p>
+                <p class="author">- Vikram Khanna</p>
+            </div>
+            <div class="testimonial">
+                <p>"The travel consultants were incredibly knowledgeable and responsive. Booking was a breeze, and their recommendations for accommodations and activities were spot-on."</p>
+                <p class="author">- Sneha Joshi</p>
+            </div>
+            <div class="testimonial">
+                <p>"Visa assistance was a breeze with their support. Clear guidance and prompt communication made the process smooth and stress-free."</p>
+                <p class="author">- Kavita Desai</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="pricing" id="plans">
+        <div class="container">
+            <h2>Choose Your Plan</h2>
+            <div class="price-plan">
+                <h3>Basic Explorer</h3>
+                <p> - Assistance with booking flights and accommodations.
+                    - Standard travel itineraries.
+                    - Access to general travel information.
+                    - Email support.</p>
+                <p class="price">₹2,500</p>
+                <a href="#" class="btn">Select Plan</a>
+            </div>
+            <div class="price-plan">
+                <h3>Adventurer Plus</h3>
+                <p>- Customized travel plans tailored to individual preferences.
+                    - 24/7 customer support for emergencies.
+                    - Exclusive deals on accommodations and activities.
+                    - Access to a dedicated travel advisor.
+                    - Basic travel insurance coverage.</p>
+                <p class="price">₹5,000</p>
+                <a href="#" class="btn">Select Plan</a>
+            </div>
+            <div class="price-plan">
+                <h3>Globe Trotter Premium</h3>
+                <p>- Personalized itineraries with unique experiences.
+                    - Priority access to exclusive deals and promotions.
+                    - Multilingual customer support.
+                    - Comprehensive travel insurance coverage.
+                    - VIP services, including airport lounge access.</p>
+                <p class="price">₹10,000</p>
+                <a href="#" class="btn">Select Plan</a>
+            </div>
+            <div class="price-plan">
+                <h3>Luxury Nomad Elite</h3>
+                <p> - Ultra-personalized luxury travel experiences.
+                    - Private concierge service for seamless travel.
+                    - Exclusive access to high-end accommodations and activities.
+                    - Global VIP support.
+                    - Premium travel insurance with additional benefits.
+                    - Customized travel perks and amenities.</p>
+                <p class="price">₹25,000</p>
+                <a href="#" class="btn">Select Plan</a>
+            </div>
+            
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+
+                <button type="submit" class="btn">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 Luxe Voyage. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
